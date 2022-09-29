@@ -17,9 +17,9 @@ from cdp_backend.pipeline.mock_get_events import (
     get_events as get_test_deployment_events,
 )
 
-from cdp_scrapers.legistar_utils import LegistarScraper
-from cdp_scrapers.instances.portland import get_portland_events
 from cdp_scrapers.instances.atlanta import get_events as get_atlanta_events
+from cdp_scrapers.instances.portland import get_portland_events
+from cdp_scrapers.utils.legistar_utils import LegistarScraper
 
 ###############################################################################
 

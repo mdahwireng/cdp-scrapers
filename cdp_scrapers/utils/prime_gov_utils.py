@@ -5,7 +5,9 @@ from typing import Any, Dict, Iterable, List, Optional, Set
 from cdp_backend.pipeline.ingestion_models import Body, EventIngestionModel, Session
 from civic_scraper.platforms.primegov.site import PrimeGovSite
 
-from .scraper_utils import IngestionModelScraper, reduced_list, str_simplified
+from .scraper_utils import IngestionModelScraper
+from ..utils.reduced_list import reduced_list
+from ..utils.str_simplified import str_simplified
 
 ###############################################################################
 

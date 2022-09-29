@@ -1,6 +1,6 @@
 import pytest
 
-from cdp_scrapers.scraper_utils import str_simplified
+from cdp_scrapers.utils.str_simplified import str_simplified
 
 
 @pytest.mark.parametrize(

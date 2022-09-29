@@ -1,30 +1,30 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import json
 import logging
 import re
-import json
-import requests
-import urllib3
 import warnings
+from datetime import datetime
+from pathlib import Path
 from typing import Dict, List, Optional
 from urllib.error import HTTPError, URLError
+from urllib.parse import parse_qs, quote_plus, urlsplit
 from urllib.request import urlopen
-from urllib.parse import urlsplit, parse_qs, quote_plus
-from pathlib import Path
-from datetime import datetime
 
+import requests
+import urllib3
 from bs4 import BeautifulSoup
-
 from cdp_backend.pipeline.ingestion_models import Person, Seat
 
-from ..legistar_utils import (
+from ..types import ContentURIs
+from ..utils.legistar_utils import (
     LEGISTAR_EV_SITE_URL,
     LEGISTAR_SESSION_DATE,
     LegistarScraper,
 )
-from ..scraper_utils import str_simplified, parse_static_file
-from ..types import ContentURIs
+from ..utils.parse_static_file import parse_static_file
+from ..utils.str_simplified import str_simplified
 
 ###############################################################################
 

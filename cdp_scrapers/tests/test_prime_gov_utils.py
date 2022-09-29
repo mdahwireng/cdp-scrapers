@@ -4,8 +4,8 @@ from typing import List
 
 import pytest
 
-from cdp_scrapers.prime_gov_utils import Meeting, PrimeGovScraper
-from cdp_scrapers.scraper_utils import reduced_list
+from cdp_scrapers.utils.prime_gov_utils import Meeting, PrimeGovScraper
+from cdp_scrapers.utils.reduced_list import reduced_list
 
 
 class DataItem(enum.IntEnum):

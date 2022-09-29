@@ -24,12 +24,10 @@ from cdp_backend.pipeline.ingestion_models import (
     Vote,
 )
 
-from ..scraper_utils import (
-    IngestionModelScraper,
-    reduced_list,
-    str_simplified,
-    parse_static_file,
-)
+from ..utils.parse_static_file import parse_static_file
+from ..utils.reduced_list import reduced_list
+from ..utils.scraper_utils import IngestionModelScraper
+from ..utils.str_simplified import str_simplified
 
 ###############################################################################
 
